@@ -146,11 +146,44 @@
 ### 1) LEAGUE-EXP-V4
 - `/lol/league-exp/v4/entries/{queue}/{tier}/{division}?page={page}&api_key={api_key}`
 - 사용할 컬럼: tier, rank, wins, losses, hotStreak, veteran, freshBlood, inactive
-<table>
-  <thead>
-    
-  </thead>
-</table>
+
+<p align="center">
+  <table>
+    <thead>
+      <tr>
+        <th><code>tier</code></th>
+        <th><code>rank</code></th>
+        <th><code>wins</code></th>
+        <th><code>losses</code></th>
+        <th><code>hotStreak</code></th>
+        <th><code>veteran</code></th>
+        <th><code>freshBlood</code></th>
+        <th><code>inactive</code></th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>유저의 티어</td>
+      <td>티어 내의 세부 구분(I,II,III,IV) </td>
+      <td>승리한 판의 수</td>
+      <td>패배한 판의 수 </td>
+      <td>연승 여부</td>
+      <td>티어가 꾸준하게 변동되지 않고, 2회 이상 같은 랭크에 있는지 여부</td>
+      <td>랭크의 신규 입문자</td>
+      <td>장기간 게임을 하지 않은 유저</td>
+    </tbody>
+    <tr>
+      <td>String</td>
+      <td>String</td>
+      <td>int</td>
+      <td>int</td>
+      <td>Boolean</td>
+      <td>Boolean</td>
+      <td>Boolean</td>
+      <td>Booleane</td>
+    </tr>
+  </table>
+</p>
+
 
 ### 2) SUMMONER-V4
 - `/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}`
