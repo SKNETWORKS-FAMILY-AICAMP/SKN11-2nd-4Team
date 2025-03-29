@@ -143,6 +143,8 @@
   <h5 align="center">리그 오브 레전드(League of Legends)의 데이터에 접근할 수 있게 해주는 API 사용</h5>
 </p>
 
+<br/>
+
 ### 1) LEAGUE-EXP-V4
 - `/lol/league-exp/v4/entries/{queue}/{tier}/{division}?page={page}&api_key={api_key}`
 - 사용할 컬럼: tier, rank, wins, losses, hotStreak, veteran, freshBlood, inactive
@@ -162,7 +164,7 @@
       </tr>
     </thead>
     <tbody>
-      <td>유저의 티어</td>
+      <td>player의 티어</td>
       <td>티어 내의 세부 구분(I,II,III,IV) </td>
       <td>승리한 판의 수</td>
       <td>패배한 판의 수 </td>
@@ -172,27 +174,88 @@
       <td>장기간 게임을 하지 않은 유저</td>
     </tbody>
     <tr>
-      <td>String</td>
-      <td>String</td>
-      <td>int</td>
-      <td>int</td>
-      <td>Boolean</td>
-      <td>Boolean</td>
-      <td>Boolean</td>
-      <td>Booleane</td>
+      <td>object</td>
+      <td>object</td>
+      <td>int64</td>
+      <td>int64</td>
+      <td>Bool</td>
+      <td>Bool</td>
+      <td>Bool</td>
+      <td>Bool</td>
     </tr>
   </table>
 </p>
 
+<br/>
 
 ### 2) SUMMONER-V4
 - `/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}`
-- revisionDate, summonerLevel
+- 사용할 컬럼: revisionDate, summonerLevel
+
+<p align="center">
+  <table>
+    <thead>
+      <tr>
+        <th><code>revisionDate</code></th>
+        <th><code>summonerLevel</code></th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>player가 마지막 접속한 날짜 (utc 기준 millisecond)</td>
+      <td>player의 레벨</td>
+    </tbody>
+    <tr>
+      <td>float64</td>
+      <td>float64</td>
+    </tr>
+  </table>
+</p>
+
+<br/>
 
 ### 3) CHAMPION-MASTERY-V4
 - `/lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/top`
 
 championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSeasonMilestone(requireGradeCounts, rewardMarks, bonus, totalGamesRequires)
+
+<p align="center">
+  <table>
+    <thead>
+      <tr>
+        <th><code>championLevel</code></th>
+        <th><code>championPoints</code></th>
+        <th><code>championSeasonMilestone</code></th>
+        <th><code>milestoneGrades</code></th>
+        <th><code>nextSeasonMilestone.requireGradeCounts</code></th>
+        <th><code>nextSeasonMilestone.rewardMarks</code></th>
+        <th><code>nextSeasonMilestone.bonus</code></th>
+        <th><code>nextSeasonMilestone.totalGamesRequires</code></th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>player가 가진 champion의 레벨</td>
+      <td>player가 가진 champion의 숙련도</td>
+      <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
+      <td>champion 숙련도의 마일스톤에 대한 성적</td>
+      <td>다음 시즌에 필요한 champion 마일스톤 성적 조건</td>
+      <td>마일스톤 달성 시 얻을 수 있는 보상 마크 수</td>
+      <td>보너스 여부</td>
+      <td>마일스톤 달성을 위해 필요한 게임 수</td>
+    </tbody>
+    <tr>
+      <td>int64</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>Bool</td>
+      <td>int64</td>
+    </tr>
+  </table>
+</p>
+
+<br/>
 
 ### 4) CHAMPION 정보 json
 - 사용할지말지 고민중
