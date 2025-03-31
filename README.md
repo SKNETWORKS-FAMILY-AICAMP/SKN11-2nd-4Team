@@ -280,12 +280,14 @@ heatmap 임시
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
-- random forest
-- logistic regression
-- knn
-- svm
-- deep learning
+- random forest (현욱)
+- logistic regression (종현)
+- knn (근)
+- svm (유경)
+- 앙상블 (종현)
+- deep learning (근)
 - hyper parameter는 하면서 고치기
+- 
 
 <br/><br/>
 
