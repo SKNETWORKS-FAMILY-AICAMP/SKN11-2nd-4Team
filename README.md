@@ -277,8 +277,8 @@ ChampionMasteryDto
 ### churn 컬럼 생성하기
 ![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
 
-### Oversampling
-##### Oversampling veteran, freshBlood, hotStreak, churn 
+### Over Sampling
+##### Oversampling veteran, freshBlood, hotStreak, churn -> 약 1000만개의 rows
 <p align="center">
   <img src='https://github.com/user-attachments/assets/5678bcd4-64f1-47d7-bd9a-8edfa574d842' width=600></img> <br/>
   과적합
@@ -294,6 +294,9 @@ ChampionMasteryDto
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c416d868-4b4d-498d-8c72-74b26141144c" width=600></img> <br/>
 </p>
+
+### Under Sampling
+NearMiss
 
 
 
