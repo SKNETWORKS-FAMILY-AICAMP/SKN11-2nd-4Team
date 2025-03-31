@@ -248,7 +248,10 @@
 ### 1) column 정제
 #### 필요없는 column 제거
 > 방법: drop() 사용
-![image](https://github.com/user-attachments/assets/af78fe6c-90bd-41e5-90e6-f9fc97e6889c)
+<p align="center>
+  <img src='https://github.com/user-attachments/assets/af78fe6c-90bd-41e5-90e6-f9fc97e6889c'>
+</p>
+
 > **💡 해당 컬럼을 제거한 이유** <br/>
 > `중복값 제거`: id, 비슷한 성격을 가진 컬럼 <br/>
 > `관련성 없는 데이터 제거`: 게임 내에서 얻는 아이템 관련 컬럼 <br/>
@@ -265,8 +268,6 @@
 </p>
 <p align="center"><b>🔺필요없는 column 제거 후</b></p>
 
-![image](https://github.com/user-attachments/assets/73a8a7bc-f17e-4403-97f8-eafed5bf0bfb)
-이걸 어디에 넣어야 할까
 
 <br/>
 
@@ -284,7 +285,15 @@
 <br/>
 
 ### 2) Label Encoding
-라벨 인코딩한 결과 데이터프레임 추가하기
+> `tier`: object 형 -> 0 ~ 10까지 범주형으로 변경 <br/>
+> `rank`: object 형 -> 0 ~ 3까지 범주형으로 변경 <br/>
+> `veteran`: bool 형 -> 0 or 1로 변경 <br/>
+> `freshBlood`: bool 형 -> 0 or 1로 변경 <br/>
+> `hotStreak`: bool 형 -> 0 or 1로 변경<br/>
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/6236867d-f31d-4075-bc35-1af6134a9c67'>
+</p>
+
 
 ### 3) 전체 데이터 구조
 <table>
@@ -398,7 +407,7 @@
 <br/>
 
 ### 2) Under Sampling
-> NearMiss - 거리 기반
+> churn 컬럼 기준 `NearMiss 기법`으로 under sampling하기 - 거리 기반
 <p align="center">
   <table border="0">
     <tr>
@@ -414,7 +423,7 @@
   </table>
 </p>
 
-> TomekLinks - 유사도 기반
+> churn 컬럼 기준 `TomekLinks 기법`으로 under sampling하기 - 유사도 기반
 <p align="center">
   <table border="0">
     <tr>
@@ -429,9 +438,6 @@
     </tr>
   </table>
 </p>
-
-
-
 
 <br/><br/>
 
