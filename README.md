@@ -262,6 +262,24 @@ heatmap 임시
 ### CHURN 컬럼 생성하기
 ![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
 
+### Oversampling
+##### Oversampling veteran, freshBlood, hotStreak, churn 
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/5678bcd4-64f1-47d7-bd9a-8edfa574d842' width=600></img> <br/>
+  과적합
+</p>
+
+##### Oversampling hotStreak, churn 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/60378169-c58d-427a-8356-bf1d0fa844f9" width=600></img> <br/>
+  과적합
+</p>
+
+##### Oversampling hotStreak
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c416d868-4b4d-498d-8c72-74b26141144c" width=600></img> <br/>
+</p>
+
 
 
 <br/><br/>
