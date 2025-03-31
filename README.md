@@ -223,25 +223,25 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
   <table>
     <thead>
       <tr>
+        <th><code>championId</code></th>
         <th><code>championLevel</code></th>
         <th><code>championPoints</code></th>
         <th><code>lastPlayTime</code></th>
         <th><code>championSeasonMilestone</code></th>
-        <th><code>milestoneGrades</code></th>
       </tr>
     </thead>
     <tbody>
+      <td>champion의 id</td>
       <td>player가 가진 champion의 레벨</td>
       <td>player가 가진 champion의 숙련도</td>
       <td>player가 해당 champion으로 활동한 마지막 시간</td>
       <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
-      <td>champion 숙련도의 마일스톤에 대한 성적</td>
     </tbody>
     <tr>
       <td>int64</td>
-      <td>object</td>
       <td>int64</td>
       <td>object</td>
+      <td>int64</td>
       <td>object</td>
     </tr>
   </table>
