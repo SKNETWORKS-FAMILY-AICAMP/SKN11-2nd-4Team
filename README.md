@@ -142,13 +142,69 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f66104b4-25b0-4866-82dc-83d939b7cc3f" width=700>
   <h5 align="center">리그 오브 레전드(League of Legends)의 데이터에 접근할 수 있게 해주는 API 사용</h5>
+</p><br/>
+
+## 📅 데이터 수집 기간
+- User의 상세 데이터: 25.03.26 (수) - 25.03.28 (토)
+- User가 가장 많이 사용하는 상위 3개의 champion 데이터: 25.03.27 (금) - 25.03.30 (일)
+
+## 💻 사용한 API
+
+### 1) LEAGUE-EXP-V4
+- `/lol/league-exp/v4/entries/{queue}/{tier}/{division}?page={page}&api_key={api_key}`
+- User의 상세 데이터 수집
+
+#### 💿LeagueEntryDTO
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1e68b0e3-af24-43df-8465-53bdefc2f067" width=700>
 </p>
 
 <br/>
 
-### 1) LEAGUE-EXP-V4
-- `/lol/league-exp/v4/entries/{queue}/{tier}/{division}?page={page}&api_key={api_key}`
+### 2) SUMMONER-V4
+- `/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}`
+- User의 상세 데이터 수집
 
+#### 💿SummonerDTO 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2c121a95-61be-4bd6-8d9d-d95d4b755876" width=700>
+</p>
+
+<br/>
+
+### 3) CHAMPION-MASTERY-V4
+- `/lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/top`
+- User가 가장 많이 사용하는 상위 3개의 champion 데이터 수집
+
+#### 💿ChampionMasteryDto
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f6a68dea-e7ef-42da-80bb-9c74f83e6916" width=700>
+</p>
+
+#### 💿NextSeasonMilestonesDto 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/198fec4a-891a-4993-9aed-9bb5076bd1a3" width=700>
+</p>
+
+#### 💿RewardConfigDto
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/41e0f5e8-4998-409c-87fa-616df2cb6c4f" width=700>
+</p>
+
+<br/><br/>
+
+# 6️⃣ 데이터 전처리 결과서 (EDA)
+## 👉🏻 데이터 확인하기
+
+<br/>
+
+### Tier별 유저 분포 확인
+![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
+![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
+
+<br/>
+
+### 필요없는 column 제거
 <p align="center">
   <table>
     <thead>
@@ -185,11 +241,7 @@
     </tr>
   </table>
 </p>
-
-<br/>
-
-### 2) SUMMONER-V4
-- `/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}`
+![image](https://github.com/user-attachments/assets/63ddab6a-0037-4d13-bbfb-b051ac43568c)
 
 <p align="center">
   <table>
@@ -209,13 +261,7 @@
     </tr>
   </table>
 </p>
-
-<br/>
-
-### 3) CHAMPION-MASTERY-V4
-- `/lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/top`
-
-ChampionMasteryDto
+![image](https://github.com/user-attachments/assets/882b8339-0764-4955-9ea9-26879354330d)
 
 
 <p align="center">
@@ -245,25 +291,6 @@ ChampionMasteryDto
     </tr>
   </table>
 </p>
-
-<br/><br/>
-
-# 6️⃣ 데이터 전처리 결과서 (EDA)
-## 👉🏻 데이터 확인하기
-
-<br/>
-
-### Tier별 유저 분포 확인
-![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
-![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
-
-<br/>
-
-### 필요없는 column 제거
-![image](https://github.com/user-attachments/assets/63ddab6a-0037-4d13-bbfb-b051ac43568c)
-
-![image](https://github.com/user-attachments/assets/882b8339-0764-4955-9ea9-26879354330d)
-
 
 ![image](https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8)
 - freshBlood와 churn은 중간 정도의 상관관계를 가짐 신규 유저면 이탈 확률이 절반
