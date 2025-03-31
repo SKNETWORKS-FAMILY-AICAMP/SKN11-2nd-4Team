@@ -263,7 +263,10 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
 # 6️⃣ 데이터 전처리 결과서 (EDA)
 ### 데이터 확인하기
 ![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
+![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
 
+### CHURN 컬럼 생성하기
+![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
 
 
 
