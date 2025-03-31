@@ -249,17 +249,32 @@ ChampionMasteryDto
 <br/><br/>
 
 # 6️⃣ 데이터 전처리 결과서 (EDA)
-### 데이터 확인하기
+## 👉🏻 데이터 확인하기
+
+<br/>
+
+### Tier별 유저 분포 확인
 ![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
 ![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
 
 <br/>
-![image](https://github.com/user-attachments/assets/aeeafabd-e8e1-420c-9e74-b6a5306fed2f)
-heatmap 임시 
+
+### 필요없는 column 제거
+![image](https://github.com/user-attachments/assets/63ddab6a-0037-4d13-bbfb-b051ac43568c)
+
+![image](https://github.com/user-attachments/assets/882b8339-0764-4955-9ea9-26879354330d)
+
+
+![image](https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8)
 - freshBlood와 churn은 중간 정도의 상관관계를 가짐 신규 유저면 이탈 확률이 절반
 - veteran일수록 이탈 비율이 낮음 -> veteran이 아닐수록 이탈 비율이 큼
+  
 
-### CHURN 컬럼 생성하기
+## 👉🏻 데이터 전처리
+### revisionDate 컬럼 datetime으로 변경
+![image](https://github.com/user-attachments/assets/cf3e2cdd-f4f3-46ba-846f-7d7eff87efbe)
+
+### churn 컬럼 생성하기
 ![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
 
 ### Oversampling
