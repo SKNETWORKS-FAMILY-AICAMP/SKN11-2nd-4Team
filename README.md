@@ -261,6 +261,11 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
 - 사용할지말지 고민중
 
 # 6️⃣ 데이터 전처리 결과서 (EDA)
+### 데이터 확인하기
+![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
+
+
+
 
 <br/><br/>
 
