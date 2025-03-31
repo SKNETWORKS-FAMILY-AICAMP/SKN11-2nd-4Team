@@ -220,12 +220,14 @@
 <br/>
 
 ### 2) 결측값 확인
+> 방법: isna() 사용
 <p align="center">
   <img src='https://github.com/user-attachments/assets/9098b8c0-fcce-45a7-8260-bd3b644be0a1'>
 </p>
 <br/>
 
 ### 3) 중복값 제거
+> 방법: drop_duplicates() 사용
 <p align="center">
   <table border="0">
     <tr>
@@ -245,6 +247,7 @@
 ## 👉🏻 데이터 정제하기
 ### 1) column 정제
 #### 필요없는 column 제거
+> 방법: drop() 사용
 ![image](https://github.com/user-attachments/assets/af78fe6c-90bd-41e5-90e6-f9fc97e6889c)
 > **💡 해당 컬럼을 제거한 이유** <br/>
 > `중복값 제거`: id, 비슷한 성격을 가진 컬럼 <br/>
@@ -304,19 +307,9 @@
       <td>integer</td>
     </tr>
     <tr>
-      <td><code>wins</code></td>
-      <td>승리한 판의 수</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td><code>losses</code></td>
-      <td>패배한 판의 수</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td><code>hotStreak</code></td>
-      <td>연승 여부</td>
-      <td>integer</td>
+      <td><code>winRate</code></td>
+      <td>승률</td>
+      <td>float</td>
     </tr>
     <tr>
       <td><code>veteran</code></td>
@@ -329,8 +322,8 @@
       <td>integer</td>
     </tr>
     <tr>
-      <td><code>inactive</code></td>
-      <td>장기간 게임을 하지 않은 유저</td>
+      <td><code>hotStreak</code></td>
+      <td>연승 여부</td>
       <td>integer</td>
     </tr>
     <tr>
@@ -366,6 +359,11 @@
     <tr>
       <td><code>championSeasonMilestone</code></td>
       <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>churn</code></td>
+      <td>이탈 여부</td>
       <td>integer</td>
     </tr>
   </tbody>
