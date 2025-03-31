@@ -266,6 +266,12 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
 ![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
 ![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
 
+<br/>
+![image](https://github.com/user-attachments/assets/aeeafabd-e8e1-420c-9e74-b6a5306fed2f)
+heatmap 임시 
+- freshBlood와 churn은 중간 정도의 상관관계를 가짐 신규 유저면 이탈 확률이 절반
+- veteran일수록 이탈 비율이 낮음 -> veteran이 아닐수록 이탈 비율이 큼
+
 ### CHURN 컬럼 생성하기
 ![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
 
