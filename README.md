@@ -107,7 +107,8 @@
 <br/><br/>
 
 ## 🤖 프로젝트 목표
-- 이탈 유저의 특성을 파악해 이탈 가능성이 있는 유저를 사전에 식별하여 게임의 지속적인 활성화와 유저 만족도 극대화
+- 유저의 상세 데이터를 활용하여 이탈 유저의 특성을 파악
+- 이탈 가능성이 있는 유저를 사전에 식별하여 게임의 지속적인 활성화와 유저 만족도 극대화
 - 
 <br/><br/>
 
@@ -273,6 +274,12 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
+- random forest
+- logistic regression
+- knn
+- svm
+- deep learning
+- hyper parameter는 하면서 고치기
 
 <br/><br/>
 
