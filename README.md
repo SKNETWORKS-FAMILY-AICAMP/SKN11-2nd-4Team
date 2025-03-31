@@ -148,7 +148,6 @@
 
 ### 1) LEAGUE-EXP-V4
 - `/lol/league-exp/v4/entries/{queue}/{tier}/{division}?page={page}&api_key={api_key}`
-- 사용할 컬럼: tier, rank, wins, losses, hotStreak, veteran, freshBlood, inactive
 
 <p align="center">
   <table>
@@ -191,7 +190,6 @@
 
 ### 2) SUMMONER-V4
 - `/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}`
-- 사용할 컬럼: revisionDate, summonerLevel
 
 <p align="center">
   <table>
@@ -217,7 +215,8 @@
 ### 3) CHAMPION-MASTERY-V4
 - `/lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/top`
 
-championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSeasonMilestone(requireGradeCounts, rewardMarks, bonus, totalGamesRequires)
+ChampionMasteryDto
+
 
 <p align="center">
   <table>
