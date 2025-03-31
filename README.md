@@ -224,6 +224,7 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
       <tr>
         <th><code>championLevel</code></th>
         <th><code>championPoints</code></th>
+        <th><code>lastPlayTime</code></th>
         <th><code>championSeasonMilestone</code></th>
         <th><code>milestoneGrades</code></th>
         <th><code>nextSeasonMilestone.requireGradeCounts</code></th>
@@ -235,6 +236,7 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
     <tbody>
       <td>player가 가진 champion의 레벨</td>
       <td>player가 가진 champion의 숙련도</td>
+      <td>player가 해당 champion으로 활동한 마지막 시간</td>
       <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
       <td>champion 숙련도의 마일스톤에 대한 성적</td>
       <td>다음 시즌에 필요한 champion 마일스톤 성적 조건</td>
@@ -245,6 +247,7 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
     <tr>
       <td>int64</td>
       <td>object</td>
+      <td>int64</td>
       <td>object</td>
       <td>object</td>
       <td>object</td>
@@ -255,10 +258,7 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
   </table>
 </p>
 
-<br/>
-
-### 4) CHAMPION 정보 json
-- 사용할지말지 고민중
+<br/><br/>
 
 # 6️⃣ 데이터 전처리 결과서 (EDA)
 ### 데이터 확인하기
