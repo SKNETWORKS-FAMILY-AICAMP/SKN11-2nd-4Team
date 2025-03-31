@@ -107,7 +107,8 @@
 <br/><br/>
 
 ## 🤖 프로젝트 목표
-- 이탈 유저의 특성을 파악해 이탈 가능성이 있는 유저를 사전에 식별하여 게임의 지속적인 활성화와 유저 만족도 극대화
+- 유저의 상세 데이터를 활용하여 이탈 유저의 특성을 파악
+- 이탈 가능성이 있는 유저를 사전에 식별하여 게임의 지속적인 활성화와 유저 만족도 극대화
 - 
 <br/><br/>
 
@@ -224,6 +225,7 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
       <tr>
         <th><code>championLevel</code></th>
         <th><code>championPoints</code></th>
+        <th><code>lastPlayTime</code></th>
         <th><code>championSeasonMilestone</code></th>
         <th><code>milestoneGrades</code></th>
         <th><code>nextSeasonMilestone.requireGradeCounts</code></th>
@@ -235,6 +237,7 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
     <tbody>
       <td>player가 가진 champion의 레벨</td>
       <td>player가 가진 champion의 숙련도</td>
+      <td>player가 해당 champion으로 활동한 마지막 시간</td>
       <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
       <td>champion 숙련도의 마일스톤에 대한 성적</td>
       <td>다음 시즌에 필요한 champion 마일스톤 성적 조건</td>
@@ -245,6 +248,7 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
     <tr>
       <td>int64</td>
       <td>object</td>
+      <td>int64</td>
       <td>object</td>
       <td>object</td>
       <td>object</td>
@@ -255,16 +259,35 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
   </table>
 </p>
 
-<br/>
-
-### 4) CHAMPION 정보 json
-- 사용할지말지 고민중
+<br/><br/>
 
 # 6️⃣ 데이터 전처리 결과서 (EDA)
+### 데이터 확인하기
+![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
+![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
+
+<br/>
+![image](https://github.com/user-attachments/assets/aeeafabd-e8e1-420c-9e74-b6a5306fed2f)
+heatmap 임시 
+- freshBlood와 churn은 중간 정도의 상관관계를 가짐 신규 유저면 이탈 확률이 절반
+- veteran일수록 이탈 비율이 낮음 -> veteran이 아닐수록 이탈 비율이 큼
+
+### CHURN 컬럼 생성하기
+![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
+
+
 
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
+- random forest (현욱)
+- logistic regression (종현)
+- knn (근)
+- svm (유경)
+- 앙상블 (종현)
+- deep learning (근)
+- hyper parameter는 하면서 고치기
+- 
 
 <br/><br/>
 
