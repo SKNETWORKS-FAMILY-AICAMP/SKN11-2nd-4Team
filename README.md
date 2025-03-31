@@ -296,7 +296,8 @@ ChampionMasteryDto
 </p>
 
 ### Under Sampling
-NearMiss
+NearMiss - 거리 기반
+TomekLinks - 유사도 기반
 
 
 
