@@ -148,7 +148,6 @@
 
 ### 1) LEAGUE-EXP-V4
 - `/lol/league-exp/v4/entries/{queue}/{tier}/{division}?page={page}&api_key={api_key}`
-- 사용할 컬럼: tier, rank, wins, losses, hotStreak, veteran, freshBlood, inactive
 
 <p align="center">
   <table>
@@ -191,7 +190,6 @@
 
 ### 2) SUMMONER-V4
 - `/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}`
-- 사용할 컬럼: revisionDate, summonerLevel
 
 <p align="center">
   <table>
@@ -217,44 +215,33 @@
 ### 3) CHAMPION-MASTERY-V4
 - `/lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/top`
 
-championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSeasonMilestone(requireGradeCounts, rewardMarks, bonus, totalGamesRequires)
+ChampionMasteryDto
+
 
 <p align="center">
   <table>
     <thead>
       <tr>
+        <th><code>championId</code></th>
         <th><code>championLevel</code></th>
         <th><code>championPoints</code></th>
         <th><code>lastPlayTime</code></th>
         <th><code>championSeasonMilestone</code></th>
-        <th><code>milestoneGrades</code></th>
-        <th><code>nextSeasonMilestone.requireGradeCounts</code></th>
-        <th><code>nextSeasonMilestone.rewardMarks</code></th>
-        <th><code>nextSeasonMilestone.bonus</code></th>
-        <th><code>nextSeasonMilestone.totalGamesRequires</code></th>
       </tr>
     </thead>
     <tbody>
+      <td>champion의 id</td>
       <td>player가 가진 champion의 레벨</td>
       <td>player가 가진 champion의 숙련도</td>
       <td>player가 해당 champion으로 활동한 마지막 시간</td>
       <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
-      <td>champion 숙련도의 마일스톤에 대한 성적</td>
-      <td>다음 시즌에 필요한 champion 마일스톤 성적 조건</td>
-      <td>마일스톤 달성 시 얻을 수 있는 보상 마크 수</td>
-      <td>보너스 여부</td>
-      <td>마일스톤 달성을 위해 필요한 게임 수</td>
     </tbody>
     <tr>
       <td>int64</td>
+      <td>int64</td>
       <td>object</td>
       <td>int64</td>
       <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>Bool</td>
-      <td>int64</td>
     </tr>
   </table>
 </p>
@@ -262,18 +249,51 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
 <br/><br/>
 
 # 6️⃣ 데이터 전처리 결과서 (EDA)
-### 데이터 확인하기
+## 👉🏻 데이터 확인하기
+
+<br/>
+
+### Tier별 유저 분포 확인
 ![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
 ![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
 
 <br/>
-![image](https://github.com/user-attachments/assets/aeeafabd-e8e1-420c-9e74-b6a5306fed2f)
-heatmap 임시 
+
+### 필요없는 column 제거
+![image](https://github.com/user-attachments/assets/63ddab6a-0037-4d13-bbfb-b051ac43568c)
+
+![image](https://github.com/user-attachments/assets/882b8339-0764-4955-9ea9-26879354330d)
+
+
+![image](https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8)
 - freshBlood와 churn은 중간 정도의 상관관계를 가짐 신규 유저면 이탈 확률이 절반
 - veteran일수록 이탈 비율이 낮음 -> veteran이 아닐수록 이탈 비율이 큼
+  
 
-### CHURN 컬럼 생성하기
+## 👉🏻 데이터 전처리
+### revisionDate 컬럼 datetime으로 변경
+![image](https://github.com/user-attachments/assets/cf3e2cdd-f4f3-46ba-846f-7d7eff87efbe)
+
+### churn 컬럼 생성하기
 ![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
+
+### Oversampling
+##### Oversampling veteran, freshBlood, hotStreak, churn 
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/5678bcd4-64f1-47d7-bd9a-8edfa574d842' width=600></img> <br/>
+  과적합
+</p>
+
+##### Oversampling hotStreak, churn 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/60378169-c58d-427a-8356-bf1d0fa844f9" width=600></img> <br/>
+  과적합
+</p>
+
+##### Oversampling hotStreak
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c416d868-4b4d-498d-8c72-74b26141144c" width=600></img> <br/>
+</p>
 
 
 
@@ -297,6 +317,9 @@ heatmap 임시
 <br/><br/>
 
 # 9️⃣ 수행결과
+
+- tkinter: input에 따라 달라지는 output을
+- streamlit: 시각화
 
   
 <br/><br/>
