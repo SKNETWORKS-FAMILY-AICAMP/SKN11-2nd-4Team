@@ -228,10 +228,6 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
         <th><code>lastPlayTime</code></th>
         <th><code>championSeasonMilestone</code></th>
         <th><code>milestoneGrades</code></th>
-        <th><code>nextSeasonMilestone.requireGradeCounts</code></th>
-        <th><code>nextSeasonMilestone.rewardMarks</code></th>
-        <th><code>nextSeasonMilestone.bonus</code></th>
-        <th><code>nextSeasonMilestone.totalGamesRequires</code></th>
       </tr>
     </thead>
     <tbody>
@@ -240,10 +236,6 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
       <td>player가 해당 champion으로 활동한 마지막 시간</td>
       <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
       <td>champion 숙련도의 마일스톤에 대한 성적</td>
-      <td>다음 시즌에 필요한 champion 마일스톤 성적 조건</td>
-      <td>마일스톤 달성 시 얻을 수 있는 보상 마크 수</td>
-      <td>보너스 여부</td>
-      <td>마일스톤 달성을 위해 필요한 게임 수</td>
     </tbody>
     <tr>
       <td>int64</td>
@@ -251,10 +243,6 @@ championLevel, championPoints, championSeasonMilestone, milestoneGrades, nextSea
       <td>int64</td>
       <td>object</td>
       <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>Bool</td>
-      <td>int64</td>
     </tr>
   </table>
 </p>
