@@ -642,11 +642,11 @@ D. Best Hyper Parameters
 
 <br/><br/>
 
-# 9️⃣ 시연 페이지
+# 9️⃣ 시연 페이지 및 모델
 <p align="center">
   <img src='https://github.com/user-attachments/assets/cc4137fd-4303-4fab-a18c-f33e873dfe71'>
 </p>
-
+<a href="https://ohgiraffers.notion.site/4Team-1bb649136c11802b9ecdf95d41890fdb?pvs=4">앙상블 모델</a>
 
   
 <br/><br/>
