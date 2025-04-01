@@ -482,7 +482,7 @@
     <tbody>
       <tr>  
         <td align="center" style="border:none;">
-          <img src='https://github.com/user-attachments/assets/19fa089a-dfbc-4140-a34e-d56a56b531ab' width=500>/
+          <img src='https://github.com/user-attachments/assets/19fa089a-dfbc-4140-a34e-d56a56b531ab' width=500>
         </td>
         <td align="center" style="border:none;">
           <img src='https://github.com/user-attachments/assets/bbb4f820-df81-44a4-aea5-60f1c133e901' width=500>
@@ -579,10 +579,11 @@
 </p><br/><br/>
 
 **🤖 Ensemble**
-> 사용 이유:
+> 사용 이유: 데이터의 특성상 비선형에 특화되어 있어 여러 머신러닝 모델을 결합해 강한 학습기를 생성하기 위함
+
 
 **🤖 Deep Learning**
-> 사용 이유: 
+> 사용 이유: 활성화 함수를 통해 비선형성 데이터를 가장 최적으로 학습하기 위함
 
 <br/><br/>
 
@@ -593,8 +594,6 @@
 
 # 9️⃣ 수행결과
 
-- tkinter: input에 따라 달라지는 output을
-- streamlit: 시각화
 
   
 <br/><br/>
