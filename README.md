@@ -134,12 +134,12 @@
       <td>ALL</td>
     </tr>
     <tr>
-      <td>시연 Prototype 개발</td>
+      <td>모델 학습 및 평가</td>
       <td>25.03.30 - 25.04.01</td>
       <td>안종현, 김한솔</td>
     </tr>
     <tr>
-      <td>모델 학습 및 평가</td>
+      <td>시연 Prototype 개발</td>
       <td>25.03.31 - 25.04.01</td>
       <td>ALL</td>
     </tr>
