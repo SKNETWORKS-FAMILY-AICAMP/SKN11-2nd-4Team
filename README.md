@@ -562,6 +562,8 @@
 **🤖 Random Forest**
 > 사용 이유: 비선형 분류에 강한 앙상블 모델로 churn 컬럼 이외의 컬럼들의 관계성을 학습하기 위함 <br/>
 
+
+
 A. 차원 축소하지 않은 데이터의 정확도
 <p align="center">
   <img src='https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4'>
