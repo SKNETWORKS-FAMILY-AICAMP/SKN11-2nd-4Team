@@ -617,7 +617,7 @@ D. Best Hyper Parameters
 
 <br/><br/>
 
-# 9️⃣ 수행결과
+# 9️⃣ 시연 페이지
 
 
   
