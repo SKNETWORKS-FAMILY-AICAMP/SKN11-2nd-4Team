@@ -11,24 +11,24 @@
   <thead>
     <td align="center">
       <a href="">
-        <img src="https://github.com/user-attachments/assets/a4db37fb-d77e-4cf8-bbfb-c2e8108430f1" alt="keun"/><br /><hr/>
+        <img src="https://github.com/user-attachments/assets/ad0b030a-14bd-4c37-a574-c50f9cbdf8ac alt="keun"/><br />
         <a href='https://github.com/REROUN'>이근</a>
       </a><br />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/da04be45-5246-4bcb-8846-d9fd30ba45de" alt="hyunwook"/><br /><hr/>
-      <a href='https://github.com/hyunwook990'>정현욱</a><br />
+      <img src="https://github.com/user-attachments/assets/da04be45-5246-4bcb-8846-d9fd30ba45de" alt="hyunwook"/><br />
+      <a href='https://github.com/hyunwook990'>정현욱</a><br/>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/44a27fe7-889c-48f3-a00c-a0d08f02b88c" alt="yugyeong"/><br /><hr/>
+      <img src="https://github.com/user-attachments/assets/44a27fe7-889c-48f3-a00c-a0d08f02b88c" alt="yugyeong"/><br />
       <a href='https://github.com/yugyeongh'>현유경</a><br />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/00471a6c-3447-4173-9616-f4505aab3bcb" alt="hansol"/><br /><hr/>
+      <img src="https://github.com/user-attachments/assets/00471a6c-3447-4173-9616-f4505aab3bcb" alt="hansol"/><br />
       <a href='https://github.com/kim-hansol314'>김한솔</a><br />
     </td>
     <td align="center">
-      <img src="" width="200" alt="jonghyun"/><br /><hr/>
+      <img src="" width="200" alt="jonghyun"/><br />
       <a href='https://github.com/'>안종현</a><br />
     </td>
   </thead>
