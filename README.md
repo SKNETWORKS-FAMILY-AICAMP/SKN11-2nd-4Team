@@ -10,10 +10,8 @@
 <table align="center">
   <thead>
     <td align="center">
-      <a href="">
-        <img src="https://github.com/user-attachments/assets/ad0b030a-14bd-4c37-a574-c50f9cbdf8ac" width=200 alt="keun"/><br />
-        <a href='https://github.com/REROUN'>이근</a>
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/ad0b030a-14bd-4c37-a574-c50f9cbdf8ac" width=200 alt="keun"/><br />
+      <a href='https://github.com/REROUN'>이근</a><br />
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/da04be45-5246-4bcb-8846-d9fd30ba45de" width=200 alt="hyunwook"/><br />
