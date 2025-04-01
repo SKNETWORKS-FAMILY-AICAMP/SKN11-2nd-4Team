@@ -412,6 +412,7 @@
 ### ✅ Heatmap 확인하기
 <p align="center">
   <img src='https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8'>
+  <b>🔺데이터 샘플링 한 후 Heatmap</b>
 </p>
 <br/><br/>
 
@@ -499,7 +500,14 @@
     <tr>
   </table>
 </p>
+<br/>
 
+### ✅ Heatmap 확인하기
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/e2417f71-492b-4951-a8d7-54577adc78fb'>
+  <b>🔺데이터 샘플링 한 후 Heatmap</b>
+</p>
+<br/><br/>
 
 <br/><br/>
 
