@@ -464,6 +464,7 @@
     </tr>
   </table>
 </p>
+<br/>
 
 > churn 컬럼 기준 `TomekLinks 기법`으로 under sampling하기 - 유사도 기반
 <p align="center">
@@ -480,6 +481,7 @@
     </tr>
   </table>
 </p>
+<br/>
 
 > churn, freshBlood, hotStreak 컬럼 기준 `RandomUnderSampler 기법`으로 under sampling하기
 <p align="center">
@@ -510,22 +512,56 @@
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
-- KNN
-- Logistic Regression
+- KNN & Logistic Regression
+> 사용 이유: 선형 분류 모델의 성능 파악을 위함
+
+<table>
+  <thead>
+    <td>
+      <img src='https://github.com/user-attachments/assets/7c2eb7fb-0a2e-4aa2-ad4e-b5afce20cf05'>
+    </td>
+    <td>
+      <img src='https://github.com/user-attachments/assets/865fa7ee-b039-4dff-a3e1-654d986b2b89'>
+    </td>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <img src='https://github.com/user-attachments/assets/31adaa5f-8c0e-45a5-9f2f-986cbd48bfa3'>
+      </td>
+      <td>
+        <img src='https://github.com/user-attachments/assets/49353253-cae5-473e-8d10-502117b68b0e'>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src='https://github.com/user-attachments/assets/5dea3bf8-86b9-4628-aa72-58ef5e792f97'>
+      </td>
+      <td>
+        <img src='https://github.com/user-attachments/assets/b0895b78-a9bf-41a6-8cac-d1dbdac8c9b3'>
+      </td>
+    </tr>
+  </tbody>
+
+</table><br/>
+
 - SVM
-  - PCA를 통한 차원 축소
+> 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함
+  - PCA를 통한 차원 축소(2차원, 3차원)
 ![image](https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec)
 ![image](https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6)
   - 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
     ![image](https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8)
+
+<br/>
+
 - Random Forest
-  - 정확도
+  - 차원 축소하지 않은 데이터의 정확도
     ![image](https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4)
 
-- 앙상블 (종현)
-- deep learning (근)
-- hyper parameter는 하면서 고치기
-- 
+- Ensemble
+
+- Deep Learning
 
 <br/><br/>
 
