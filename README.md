@@ -611,7 +611,7 @@ D. Best Hyper Parameters
 # 8️⃣ 인공지능 평가
 - Ensemble 평가지표
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/cb12e866-62e5-4060-82ed-389bc33a80b5'>
+  <img src='https://github.com/user-attachments/assets/cb12e866-62e5-4060-82ed-389bc33a80b5' width=800>
 </p>
 
 
