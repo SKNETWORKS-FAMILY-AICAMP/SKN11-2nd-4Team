@@ -547,7 +547,10 @@
 
 **🤖 SVM**
 > 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함 <br/>
-  A. PCA를 통한 차원 축소(2차원, 3차원)
+
+
+
+A. PCA를 통한 차원 축소(2차원, 3차원)
 <p align="center">
   <img src='https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec'>
   <img src='https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6'>
