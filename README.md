@@ -244,12 +244,12 @@
 ## 👉🏻 데이터 확인하기
 ### 1) Tier별 유저 분포 확인
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43' width=600>
+  <img src='https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a' width=600>
 </p>
 <p align="center"><b>🔺원본 데이터 시각화</b></p>
 <br/>
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a' width=600>
+  <img src='https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43' width=600>
 </p>
 <p align="center"><b>🔺원본 데이터에서 10% 추출한 데이터 시각화</b></p>
 <br/>
