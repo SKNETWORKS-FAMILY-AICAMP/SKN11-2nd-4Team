@@ -1,7 +1,7 @@
 # 🧝🏻 소환사들은 왜 협곡을 떠나는가?
 
 # 1️⃣ 팀 소개
-> SK네트웍스 Family AI 캠프 11기 ML/DL Project <br/>
+> SK네트웍스 Family AI 캠프 11기 2차 ML/DL Project <br/>
 > 팀 명: 오공주와 아이들 <br/>
 > 기간: 2025.03.24 - 2025.04.01 <br/>
 
@@ -136,7 +136,7 @@
     <tr>
       <td>시연 Prototype 개발</td>
       <td>25.03.30 - 25.04.01</td>
-      <td>안종현, 김한솔, 정현욱</td>
+      <td>안종현, 김한솔</td>
     </tr>
     <tr>
       <td>모델 학습 및 평가</td>
@@ -482,7 +482,7 @@
     <tbody>
       <tr>  
         <td align="center" style="border:none;">
-          <img src='https://github.com/user-attachments/assets/19fa089a-dfbc-4140-a34e-d56a56b531ab' width=500>/
+          <img src='https://github.com/user-attachments/assets/19fa089a-dfbc-4140-a34e-d56a56b531ab' width=500>
         </td>
         <td align="center" style="border:none;">
           <img src='https://github.com/user-attachments/assets/bbb4f820-df81-44a4-aea5-60f1c133e901' width=500>
@@ -512,7 +512,7 @@
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
-🤖 KNN & Logistic Regression
+**🤖 KNN & Logistic Regression** 
 > 사용 이유: 선형 분류 모델의 성능 파악을 위함
 
 <table>
@@ -545,9 +545,12 @@
 
 </table><br/>
 
-🤖 SVM
-> 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함
-  A. PCA를 통한 차원 축소(2차원, 3차원)
+**🤖 SVM**
+> 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함 <br/>
+
+
+
+A. PCA를 통한 차원 축소(2차원, 3차원)
 <p align="center">
   <img src='https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec'>
   <img src='https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6'>
@@ -559,42 +562,85 @@
 </p>
 <br/>
 
-🤖 Random Forest
-> 사용 이유: 비선형 분류에 강한 앙상블 모델로 churn 컬럼 이외의 컬럼들의 관계성을 학습하기 위함
-  A. 차원 축소하지 않은 데이터의 정확도
+**🤖 Random Forest**
+> 사용 이유: 비선형 분류에 강한 앙상블 모델로 churn 컬럼 이외의 컬럼들의 관계성을 학습하기 위함 <br/>
+
+
+
+A. 차원 축소하지 않은 데이터의 정확도
 <p align="center">
   <img src='https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4'>
-</p><br/>
-  B. max_depth=4
+</p><br/><br/>
+B. max_depth=4
 <p align="center">
   <img src='https://github.com/user-attachments/assets/c3148a31-0513-49f8-9c4d-336dfc4bcb74'>
-</p><br/>
-  C. 특성 중요도
+</p><br/><br/>
+C. 특성 중요도
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/bf6605a1-0d60-4420-ad22-b46cf2bcdb0a'>
-</p><br/>
-  D. Best Hyper Parameters
+  <img src='https://github.com/user-attachments/assets/bf6605a1-0d60-4420-ad22-b46cf2bcdb0a' width=600>
+</p><br/><br/>
+D. Best Hyper Parameters
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/ea200da9-40c9-4d28-aa44-420d0a8c8804'>
-</p><br/>
+  <img src='https://github.com/user-attachments/assets/b54a0f6d-19ec-4d64-b1e8-56af4bcf1a4f'>
+</p><br/><br/>
 
-🤖 Ensemble
-> 사용 이유:
+**🤖 Ensemble**
+> 사용 이유: 데이터의 특성상 비선형에 특화되어 있어 여러 머신러닝 모델을 결합해 강한 학습기를 생성하기 위함
+<table>
+  <thead>
+    <td>
+      <p align="center">
+        <img src='https://github.com/user-attachments/assets/5a6d8d98-0607-4776-830c-ff87c3714692'>
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src='https://github.com/user-attachments/assets/922b3eab-d7f1-437d-b0f4-a5e4cb4327a2'>
+      </p>
+    </td>
+  </thead>
+  <tbody>
+    <td><p align="center"><b>Hard Voting - KNN, Logistic Regression, Decision Tree</b></p></td>
+    <td><p align="center"><b>Soft Voting - GradientBoostingClasifier, CatBoostClasifier, RandomForestClasifier, LGBMClasifier</b></p></td>
+  </tbody>
+</table><br/>
 
-🤖 Deep Learning
-> 사용 이유: 
 
+**🤖 Deep Learning**
+> 사용 이유: 활성화 함수를 통해 비선형성 데이터를 가장 최적으로 학습하기 위함
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/7d77a759-737e-424a-a7c5-3439c0a8c5df'>
+</p>
 <br/><br/>
 
 # 8️⃣ 인공지능 평가
+- Ensemble 평가지표
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/cb12e866-62e5-4060-82ed-389bc33a80b5' width=800>
+</p><br/>
+
+- Deep Learning 평가지표
+<table>
+  <thead>
+    <p align="center">
+      <td>
+        <img src='https://github.com/user-attachments/assets/481ebf50-16f3-4456-9e86-6b2e5dbd9152'>
+      </td>
+      <td>
+        <img src='https://github.com/user-attachments/assets/c4d545ed-a5c2-41f9-9e3a-4f280d880eca'>
+      </td>
+    </p>
+  </thead>
+</table>
 
 
 <br/><br/>
 
-# 9️⃣ 수행결과
+# 9️⃣ 시연 페이지
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/cc4137fd-4303-4fab-a18c-f33e873dfe71'>
+</p>
 
-- tkinter: input에 따라 달라지는 output을
-- streamlit: 시각화
 
   
 <br/><br/>
@@ -602,7 +648,7 @@
 | 팀원  | 한 줄 회고                 |
 |-------|----------------------------|
 | 근 |  |
-| 현욱 |  |
-| 유경  |  |
+| 현욱 | api호출부터 crawling, 전처리, 모델 예측까지 모두 시간이 기본적으로 오래걸리기도 했고, 익숙하지 않아서 더 오래 걸려서 제 자신에게 아쉬웠던 프로젝트 였습니다. |
+| 유경  | 데이터 수집부터 제한이 많아 생각보다 지체가 되었지만, 실 데이터를 모으고 이를 학습시켜 결과를 볼 수 있었던 것에 큰 의미가 있었습니다. 생각했던 것보다 예측 결과가 낮게 나와 어려움이 많았지만 모델의 정확도를 높이기 위해 하이퍼 파라미터를 조정하기도 하고, 여러 차원으로 축소해보기도 하고, 샘플링을 시도해보기도 하면서 모델 학습을 공부할 수 있었습니다! 다들 고생많으셨습니다🤩 |
 | 한솔 |  |
 | 종현 |  |
