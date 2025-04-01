@@ -1,4 +1,4 @@
-# 🧝🏻 소환사들은 왜 협곡을 떠나는가?
+![image](https://github.com/user-attachments/assets/2da5c2e5-ce23-4327-8be3-3a59b7370200)# 🧝🏻 소환사들은 왜 협곡을 떠나는가?
 
 # 1️⃣ 팀 소개
 > SK네트웍스 Family AI 캠프 11기 ML/DL Project <br/>
@@ -11,33 +11,25 @@
   <thead>
     <td align="center">
       <a href="">
-        <img src="" height="200" width="200" alt="keun"/><br /><hr/>
-        이근
+        <img src="https://github.com/user-attachments/assets/a4db37fb-d77e-4cf8-bbfb-c2e8108430f1" height="200" width="200" alt="keun"/><br /><hr/>
+        <a href='https://github.com/REROUN'>이근</a>
       </a><br />
     </td>
     <td align="center">
-      <a href="">
-        <img src="g" width="200" alt="hyunwook"/><br /><hr/>
-        정현욱
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/da04be45-5246-4bcb-8846-d9fd30ba45de" width="200" alt="hyunwook"/><br /><hr/>
+      <a href='https://github.com/hyunwook990'>정현욱</a><br />
     </td>
     <td align="center">
-      <a href="https://github.com/yugyeongh">
-        <img src="https://github.com/yugyeongh.png" width="200" alt="yugyeong"/><br /><hr/>
-        현유경
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/44a27fe7-889c-48f3-a00c-a0d08f02b88c" width="200" alt="yugyeong"/><br /><hr/>
+      <a href='https://github.com/yugyeongh'>현유경</a><br />
     </td>
     <td align="center">
-      <a href="">
-        <img src="" width="200" alt="hansol"/><br /><hr/>
-        김한솔
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/00471a6c-3447-4173-9616-f4505aab3bcb" width="200" alt="hansol"/><br /><hr/>
+      <a href='https://github.com/kim-hansol314'>김한솔</a><br />
     </td>
     <td align="center">
-      <a href="">
-        <img src="" width="200" alt="jonghyun"/><br /><hr/>
-        안종현
-      </a><br />
+      <img src="" width="200" alt="jonghyun"/><br /><hr/>
+      <a href='https://github.com/'>안종현</a><br />
     </td>
   </thead>
 </table>
@@ -102,7 +94,7 @@
 <br/>
 
 ## ✅ 프로젝트 필요성
-- 유저가 이탈하는 이유를 파악한다면 
+- 유저의 이탈 이유를 명확히 한 가지라고 정의할 수 없어 RIOT에서는 여러 마케팅을 펼치고 있음 
 - 
 <br/><br/>
 
@@ -551,6 +543,7 @@
 ![image](https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec)
 ![image](https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6)
   - 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
+    - 30%만 샘플링한 이유: 시간 복잡도 증가
     ![image](https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8)
 
 <br/>
@@ -558,6 +551,13 @@
 - Random Forest
   - 차원 축소하지 않은 데이터의 정확도
     ![image](https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4)
+  - max_depth=4
+![KakaoTalk_20250401_112744774_05](https://github.com/user-attachments/assets/c3148a31-0513-49f8-9c4d-336dfc4bcb74)
+  - 특성 중요도
+![image](https://github.com/user-attachments/assets/bf6605a1-0d60-4420-ad22-b46cf2bcdb0a)
+
+  - best hyperparams
+![image](https://github.com/user-attachments/assets/ea200da9-40c9-4d28-aa44-420d0a8c8804)
 
 - Ensemble
 
