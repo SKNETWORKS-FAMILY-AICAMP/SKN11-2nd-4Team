@@ -34,7 +34,51 @@
 
 <br/><br/>
 
-# 2️⃣ 프로젝트 개요
+# 2️⃣ WBS
+<table>
+  <thead>
+    <td>내용</td>
+    <td>기간</td>
+    <td>담당</td>
+    <td>산출물</td>
+  </thead>
+  <tbody>
+    <tr>
+      <td>프로젝트 주제 확립</td>
+      <td>25.03.21 - 25.03.24</td>
+      <td>ALL</td>
+      <td>주제</td>
+    </tr>
+    <tr>
+      <td>데이터 수집</td>
+      <td>25.03.25 - 25.03.30</td>
+      <td>ALL</td>
+      <td>csv 데이터셋</td>
+    </tr>
+    <tr>
+      <td>데이터 EDA 및 전처리</td>
+      <td>25.03.29 - 25.03.30</td>
+      <td>ALL</td>
+      <td>EDA한 csv 데이터셋</td>
+    </tr>
+    <tr>
+      <td>모델 학습 및 평가</td>
+      <td>25.03.30 - 25.04.01</td>
+      <td>ALL</td>
+      <td>joblib 모델 파일</td>
+    </tr>
+    <tr>
+      <td>시연 Prototype 개발</td>
+      <td>25.03.31 - 25.04.01</td>
+      <td>안종현, 김한솔</td>
+      <td>Streamlit 시연 페이지</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/><br/>
+
+# 3️⃣ 프로젝트 개요
 ## ⭐프로젝트명
 - 리그 오브 레전드 유저들의 이탈률 예측
 
@@ -107,44 +151,6 @@
   - 서로 다른 4개의 스킬을 가진 170개의 챔피언 수 | 정형화된 게임 운영 방식 | 복잡한 아이템 구조
   - 기존 유저들의 자유로운 부계정 생성으로 인한 게임 난이도 증가
 - 스킨, 인터페이스의 변경
-
-<br/><br/>
-
-# 3️⃣ WBS
-<table>
-  <thead>
-    <td>내용</td>
-    <td>기간</td>
-    <td>담당</td>
-  </thead>
-  <tbody>
-    <tr>
-      <td>프로젝트 주제 확립</td>
-      <td>25.03.21 - 25.03.24</td>
-      <td>ALL</td>
-    </tr>
-    <tr>
-      <td>데이터 수집</td>
-      <td>25.03.25 - 25.03.30</td>
-      <td>ALL</td>
-    </tr>
-    <tr>
-      <td>데이터 EDA 및 전처리</td>
-      <td>25.03.29 - 25.03.30</td>
-      <td>ALL</td>
-    </tr>
-    <tr>
-      <td>시연 Prototype 개발</td>
-      <td>25.03.30 - 25.04.01</td>
-      <td>안종현, 김한솔</td>
-    </tr>
-    <tr>
-      <td>모델 학습 및 평가</td>
-      <td>25.03.31 - 25.04.01</td>
-      <td>ALL</td>
-    </tr>
-  </tbody>
-</table>
 
 <br/><br/>
 
@@ -238,12 +244,12 @@
 ## 👉🏻 데이터 확인하기
 ### 1) Tier별 유저 분포 확인
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43' width=600>
+  <img src='https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a' width=600>
 </p>
 <p align="center"><b>🔺원본 데이터 시각화</b></p>
 <br/>
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a' width=600>
+  <img src='https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43' width=600>
 </p>
 <p align="center"><b>🔺원본 데이터에서 10% 추출한 데이터 시각화</b></p>
 <br/>
@@ -636,19 +642,19 @@ D. Best Hyper Parameters
 
 <br/><br/>
 
-# 9️⃣ 시연 페이지
+# 9️⃣ 시연 페이지 및 모델
 <p align="center">
   <img src='https://github.com/user-attachments/assets/cc4137fd-4303-4fab-a18c-f33e873dfe71'>
 </p>
-
+<a href="https://ohgiraffers.notion.site/4Team-1bb649136c11802b9ecdf95d41890fdb?pvs=4">앙상블 모델</a>
 
   
 <br/><br/>
 # 🔟 한 줄 회고
 | 팀원  | 한 줄 회고                 |
 |-------|----------------------------|
-| 근 |  |
-| 현욱 | api호출부터 crawling, 전처리, 모델 예측까지 모두 시간이 기본적으로 오래걸리기도 했고, 익숙하지 않아서 더 오래 걸려서 제 자신에게 아쉬웠던 프로젝트 였습니다. |
+| 근 | 팀장으로서 전체적인 프로젝트 흐름 및 개발 단계를 설계하여 팀원들과 원활히 진행을 하였고 이 부분에서 팀 프로젝트 및 팀원과의 화합을 배워 매우 도움이 되는 시간이었습니다. 다들 수고하셨어요~ |
+| 현욱 | api호출부터 crawling, 전처리, 모델 예측까지 모두 시간이 기본적으로 오래걸리기도 했고, 익숙하지 않아서 더 오래 걸린 것이 제 자신에게 아쉬웠던 프로젝트 였습니다. |
 | 유경  | 데이터 수집부터 제한이 많아 생각보다 지체가 되었지만, 실 데이터를 모으고 이를 학습시켜 결과를 볼 수 있었던 것에 큰 의미가 있었습니다. 생각했던 것보다 예측 결과가 낮게 나와 어려움이 많았지만 모델의 정확도를 높이기 위해 하이퍼 파라미터를 조정하기도 하고, 여러 차원으로 축소해보기도 하고, 샘플링을 시도해보기도 하면서 모델 학습을 공부할 수 있었습니다! 다들 고생많으셨습니다🤩 |
-| 한솔 |  |
-| 종현 |  |
+| 한솔 | API를 활용한 데이터 추출부터 전처리, 딥러닝 모델 개발, 그리고 Streamlit 대시보드까지, 데이터 흐름의 전 과정을 직접 다루며 실전 경험을 쌓을 수 있는 경험이었으나 시간이 좀 더 있었다면 더 좋은 완성도를 만들어 낼 수 있을것 같아 아쉬움이 남는다. |
+| 종현 | 시간이 부족해 아쉬웠지만, 다양한 머신러닝, 딥러닝 기법을 적용하고 팀원들과의 지속적인 피드백을 통해 모델의 성능과 인사이트를 함께 향상시킬 수 있었던 의미 있는 시간이였다고 생각합니다. |
