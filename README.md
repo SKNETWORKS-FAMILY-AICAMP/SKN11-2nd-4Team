@@ -519,7 +519,8 @@
   - 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
     ![image](https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8)
 - Random Forest
-
+  - 정확도
+    ![image](https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4)
 
 - 앙상블 (종현)
 - deep learning (근)
