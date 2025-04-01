@@ -10,34 +10,24 @@
 <table align="center">
   <thead>
     <td align="center">
-      <a href="">
-        <img src="" height="200" width="200" alt="keun"/><br /><hr/>
-        이근
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/ad0b030a-14bd-4c37-a574-c50f9cbdf8ac" width=200 alt="keun"/><br />
+      <a href='https://github.com/REROUN'>이근</a><br />
     </td>
     <td align="center">
-      <a href="">
-        <img src="g" width="200" alt="hyunwook"/><br /><hr/>
-        정현욱
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/da04be45-5246-4bcb-8846-d9fd30ba45de" width=200 alt="hyunwook"/><br />
+      <a href='https://github.com/hyunwook990'>정현욱</a><br/>
     </td>
     <td align="center">
-      <a href="https://github.com/yugyeongh">
-        <img src="https://github.com/yugyeongh.png" width="200" alt="yugyeong"/><br /><hr/>
-        현유경
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/44a27fe7-889c-48f3-a00c-a0d08f02b88c" width=200 alt="yugyeong"/><br />
+      <a href='https://github.com/yugyeongh'>현유경</a><br />
     </td>
     <td align="center">
-      <a href="">
-        <img src="" width="200" alt="hansol"/><br /><hr/>
-        김한솔
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/00471a6c-3447-4173-9616-f4505aab3bcb" width=200 alt="hansol"/><br />
+      <a href='https://github.com/kim-hansol314'>김한솔</a><br />
     </td>
     <td align="center">
-      <a href="">
-        <img src="" width="200" alt="jonghyun"/><br /><hr/>
-        안종현
-      </a><br />
+      <img src="https://github.com/user-attachments/assets/92d8d4e4-6b97-42d8-9b87-a0e540344a97" width="200" alt="jonghyun"/><br />
+      <a href='https://github.com/'>안종현</a><br />
     </td>
   </thead>
 </table>
@@ -102,13 +92,13 @@
 <br/>
 
 ## ✅ 프로젝트 필요성
-- 유저가 이탈하는 이유를 파악한다면 
-- 
+- e스포츠 산업의 지속 성장을 위해 유저 이탈률 관리가 필수적
+- 유저 이탈은 게임 생태계와 경제적 영향력에 부정적 영향을 미칠 수 있어 이를 예측하고 대응하는 전략이 필요
+  
 <br/><br/>
 
 ## 🤖 프로젝트 목표
-- 유저의 상세 데이터를 활용하여 이탈 유저의 특성을 파악
-- 이탈 가능성이 있는 유저를 사전에 식별하여 게임의 지속적인 활성화와 유저 만족도 극대화
+- 유저의 상세 데이터를 활용하여 이탈률을 분석하여 도출된 맞춤형 대응책을 통해 유저 충성도를 높이고 e스포츠 시장의 경쟁력을 유지하는 것을 목표로 함
 
 <br/><br/>
 
@@ -166,11 +156,13 @@
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/pandas-%23000000.svg?style=for-the-badge&logo=pandas&logoColor=white">
-  <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black">
+  <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=Matplotlib&logoColor=white">
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
 </p>
-<p>
+<p align="center">
   <img src='https://img.shields.io/badge/streamlit%20-%23FF0000.svg?style=for-the-badge&logo=streamlit&logoColor=white'>
+  <img src="https://img.shields.io/badge/Graphviz-2E6DB4?style=for-the-badge&logo=graphviz&logoColor=white">
 </p>
 
 <br/><br/>
@@ -420,6 +412,7 @@
 ### ✅ Heatmap 확인하기
 <p align="center">
   <img src='https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8'>
+  <b>🔺데이터 샘플링 전 Heatmap</b>
 </p>
 <br/><br/>
 
@@ -507,12 +500,19 @@
     <tr>
   </table>
 </p>
+<br/>
 
+### ✅ Heatmap 확인하기
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/e2417f71-492b-4951-a8d7-54577adc78fb'>
+  <b>🔺데이터 샘플링 후 Heatmap</b>
+</p>
+<br/><br/>
 
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
-- KNN & Logistic Regression
+🤖 KNN & Logistic Regression
 > 사용 이유: 선형 분류 모델의 성능 파악을 위함
 
 <table>
@@ -545,23 +545,44 @@
 
 </table><br/>
 
-- SVM
+🤖 SVM
 > 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함
-  - PCA를 통한 차원 축소(2차원, 3차원)
-![image](https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec)
-![image](https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6)
-  - 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
-    ![image](https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8)
-
+  A. PCA를 통한 차원 축소(2차원, 3차원)
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec'>
+  <img src='https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6'>
+</p>
+  B. 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
+     -> 30%만 샘플링한 이유: 시간 복잡도 증가
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8'>
+</p>
 <br/>
 
-- Random Forest
-  - 차원 축소하지 않은 데이터의 정확도
-    ![image](https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4)
+🤖 Random Forest
+> 사용 이유: 비선형 분류에 강한 앙상블 모델로 churn 컬럼 이외의 컬럼들의 관계성을 학습하기 위함
+  A. 차원 축소하지 않은 데이터의 정확도
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4'>
+</p><br/>
+  B. max_depth=4
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/c3148a31-0513-49f8-9c4d-336dfc4bcb74'>
+</p><br/>
+  C. 특성 중요도
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/bf6605a1-0d60-4420-ad22-b46cf2bcdb0a'>
+</p><br/>
+  D. Best Hyper Parameters
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/ea200da9-40c9-4d28-aa44-420d0a8c8804'>
+</p><br/>
 
-- Ensemble
+🤖 Ensemble
+> 사용 이유:
 
-- Deep Learning
+🤖 Deep Learning
+> 사용 이유: 
 
 <br/><br/>
 
