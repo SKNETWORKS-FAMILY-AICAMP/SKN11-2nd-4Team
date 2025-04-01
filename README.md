@@ -586,14 +586,20 @@ D. Best Hyper Parameters
 <table>
   <thead>
     <td>
-      <img src='https://github.com/user-attachments/assets/5a6d8d98-0607-4776-830c-ff87c3714692'>
-      <b>Hard Voting - KNN, Logistic Regression, Decision Tree</b>
+      <p align="center">
+        <img src='https://github.com/user-attachments/assets/5a6d8d98-0607-4776-830c-ff87c3714692'>
+      </p>
     </td>
     <td>
-      <img src='https://github.com/user-attachments/assets/922b3eab-d7f1-437d-b0f4-a5e4cb4327a2'>
-      <b>Soft Voting - GradientBoostingClasifier, CatBoostClasifier, RandomForestClasifier, LGBMClasifier</b>
+      <p align="center">
+        <img src='https://github.com/user-attachments/assets/922b3eab-d7f1-437d-b0f4-a5e4cb4327a2'>
+      </p>
     </td>
   </thead>
+  <tbody>
+    <td><p align="center"><b>Hard Voting - KNN, Logistic Regression, Decision Tree</b></p></td>
+    <td><p align="center"><b>Soft Voting - GradientBoostingClasifier, CatBoostClasifier, RandomForestClasifier, LGBMClasifier</b></p></td>
+  </tbody>
 </table><br/>
 
 
