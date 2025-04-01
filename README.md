@@ -1,7 +1,7 @@
 # 🧝🏻 소환사들은 왜 협곡을 떠나는가?
 
 # 1️⃣ 팀 소개
-> SK네트웍스 Family AI 캠프 11기 ML/DL Project <br/>
+> SK네트웍스 Family AI 캠프 11기 2차 ML/DL Project <br/>
 > 팀 명: 오공주와 아이들 <br/>
 > 기간: 2025.03.24 - 2025.04.01 <br/>
 
