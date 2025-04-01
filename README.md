@@ -608,14 +608,30 @@ D. Best Hyper Parameters
 
 **🤖 Deep Learning**
 > 사용 이유: 활성화 함수를 통해 비선형성 데이터를 가장 최적으로 학습하기 위함
-
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/7d77a759-737e-424a-a7c5-3439c0a8c5df'>
+</p>
 <br/><br/>
 
 # 8️⃣ 인공지능 평가
 - Ensemble 평가지표
 <p align="center">
   <img src='https://github.com/user-attachments/assets/cb12e866-62e5-4060-82ed-389bc33a80b5' width=800>
-</p>
+</p><br/>
+
+- Deep Learning 평가지표
+<table>
+  <thead>
+    <p align="center">
+      <td>
+        <img src='https://github.com/user-attachments/assets/481ebf50-16f3-4456-9e86-6b2e5dbd9152'>
+      </td>
+      <td>
+        <img src='https://github.com/user-attachments/assets/c4d545ed-a5c2-41f9-9e3a-4f280d880eca'>
+      </td>
+    </p>
+  </thead>
+</table>
 
 
 <br/><br/>
