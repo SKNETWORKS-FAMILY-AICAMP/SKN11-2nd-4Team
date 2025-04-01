@@ -102,7 +102,7 @@
 <br/>
 
 ## ✅ 프로젝트 필요성
-- 
+- 유저가 이탈하는 이유를 파악한다면 
 - 
 <br/><br/>
 
@@ -121,6 +121,40 @@
 <br/><br/>
 
 # 3️⃣ WBS
+<table>
+  <thead>
+    <td>내용</td>
+    <td>기간</td>
+    <td>담당</td>
+  </thead>
+  <tbody>
+    <tr>
+      <td>프로젝트 주제 확립</td>
+      <td>25.03.21 - 25.03.24</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>데이터 수집</td>
+      <td>25.03.25 - 25.03.30</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>데이터 EDA 및 전처리</td>
+      <td>25.03.29 - 25.03.30</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>시연 Prototype 개발</td>
+      <td>25.03.30 - 25.04.01</td>
+      <td>안종현, 김한솔, 정현욱</td>
+    </tr>
+    <tr>
+      <td>모델 학습 및 평가</td>
+      <td>25.03.31 - 25.04.01</td>
+      <td>ALL</td>
+    </tr>
+  </tbody>
+</table>
 
 <br/><br/>
 
@@ -135,7 +169,10 @@
   <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black">
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
 </p>
-<p>추가하기</p>
+<p>
+  <img src='https://img.shields.io/badge/streamlit%20-%23FF0000.svg?style=for-the-badge&logo=streamlit&logoColor=white'>
+</p>
+
 <br/><br/>
 
 # 5️⃣ RIOT API 데이터 수집
@@ -387,6 +424,11 @@
 <br/><br/>
 
 ## 👉🏻 데이터 불균형 해소
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/10a50502-ce47-4b18-bd23-527af7b650cf'>
+  <b>🔺데이터 불균형 컬럼 시각화</b>
+</p>
+<br/>
 
 ### 1) Over Sampling
 > churn 컬럼 기준 `SMOTE 기법`으로 over sampling하기
@@ -438,6 +480,32 @@
     </tr>
   </table>
 </p>
+
+> churn, freshBlood, hotStreak 컬럼 기준 `RandomUnderSampler 기법`으로 under sampling하기
+<p align="center">
+  <table border="0">
+    <tbody>
+      <tr>  
+        <td align="center" style="border:none;">
+          <img src='https://github.com/user-attachments/assets/19fa089a-dfbc-4140-a34e-d56a56b531ab' width=500>/
+        </td>
+        <td align="center" style="border:none;">
+          <img src='https://github.com/user-attachments/assets/bbb4f820-df81-44a4-aea5-60f1c133e901' width=500>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>🔺under sampling - RandomUnderSampler 전</b>
+        </td>
+        <td>
+          <b>🔺under sampling - RandomUnderSampler 후</b>
+        </td>
+      </tr>
+    </tbody>
+    <tr>
+  </table>
+</p>
+
 
 <br/><br/>
 
