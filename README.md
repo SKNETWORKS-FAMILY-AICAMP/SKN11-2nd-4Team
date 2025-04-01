@@ -512,7 +512,7 @@
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
-🤖 KNN & Logistic Regression
+**🤖 KNN & Logistic Regression** 
 > 사용 이유: 선형 분류 모델의 성능 파악을 위함
 
 <table>
@@ -545,7 +545,7 @@
 
 </table><br/>
 
-🤖 SVM
+**🤖 SVM**
 > 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함
   A. PCA를 통한 차원 축소(2차원, 3차원)
 <p align="center">
@@ -559,7 +559,7 @@
 </p>
 <br/>
 
-🤖 Random Forest
+**🤖 Random Forest**
 > 사용 이유: 비선형 분류에 강한 앙상블 모델로 churn 컬럼 이외의 컬럼들의 관계성을 학습하기 위함
   A. 차원 축소하지 않은 데이터의 정확도
 <p align="center">
@@ -575,13 +575,13 @@
 </p><br/>
   D. Best Hyper Parameters
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/ea200da9-40c9-4d28-aa44-420d0a8c8804'>
+  <img src='https://github.com/user-attachments/assets/b54a0f6d-19ec-4d64-b1e8-56af4bcf1a4f'>
 </p><br/>
 
-🤖 Ensemble
+**🤖 Ensemble**
 > 사용 이유:
 
-🤖 Deep Learning
+**🤖 Deep Learning**
 > 사용 이유: 
 
 <br/><br/>
