@@ -40,32 +40,38 @@
     <td>내용</td>
     <td>기간</td>
     <td>담당</td>
+    <td>산출물</td>
   </thead>
   <tbody>
     <tr>
       <td>프로젝트 주제 확립</td>
       <td>25.03.21 - 25.03.24</td>
       <td>ALL</td>
+      <td>주제</td>
     </tr>
     <tr>
       <td>데이터 수집</td>
       <td>25.03.25 - 25.03.30</td>
       <td>ALL</td>
+      <td>csv 데이터셋</td>
     </tr>
     <tr>
       <td>데이터 EDA 및 전처리</td>
       <td>25.03.29 - 25.03.30</td>
       <td>ALL</td>
+      <td>EDA한 csv 데이터셋</td>
     </tr>
     <tr>
       <td>모델 학습 및 평가</td>
       <td>25.03.30 - 25.04.01</td>
-      <td>안종현, 김한솔</td>
+      <td>ALL</td>
+      <td>joblib 모델 파일</td>
     </tr>
     <tr>
       <td>시연 Prototype 개발</td>
       <td>25.03.31 - 25.04.01</td>
-      <td>ALL</td>
+      <td>안종현, 김한솔</td>
+      <td>Streamlit 시연 페이지</td>
     </tr>
   </tbody>
 </table>
