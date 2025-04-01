@@ -580,6 +580,18 @@
 
 **🤖 Ensemble**
 > 사용 이유: 데이터의 특성상 비선형에 특화되어 있어 여러 머신러닝 모델을 결합해 강한 학습기를 생성하기 위함
+<table>
+  <thead>
+    <td>
+      <img src='https://github.com/user-attachments/assets/5a6d8d98-0607-4776-830c-ff87c3714692'>
+      <b>Hard Voting - KNN, Logistic Regression, Decision Tree</b>
+    </td>
+    <td>
+      <img src='https://github.com/user-attachments/assets/922b3eab-d7f1-437d-b0f4-a5e4cb4327a2'>
+      <b>Soft Voting - GradientBoostingClasifier, CatBoostClasifier, RandomForestClasifier, LGBMClasifier</b>
+    </td>
+  </thead>
+</table><br/>
 
 
 **🤖 Deep Learning**
@@ -588,6 +600,10 @@
 <br/><br/>
 
 # 8️⃣ 인공지능 평가
+- Ensemble 평가지표
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/cb12e866-62e5-4060-82ed-389bc33a80b5'>
+</p>
 
 
 <br/><br/>
