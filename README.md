@@ -1,9 +1,9 @@
-# 
+# 🧝🏻 소환사들은 왜 협곡을 떠나는가?
 
 # 1️⃣ 팀 소개
 > SK네트웍스 Family AI 캠프 11기 ML/DL Project <br/>
-> 팀 명: 4팀 <br/>
-> 기간: 2025.03.31 - 2025.04.01 <br/>
+> 팀 명: 오공주와 아이들 <br/>
+> 기간: 2025.03.24 - 2025.04.01 <br/>
 
 ## 👤팀원 소개
 
@@ -46,7 +46,7 @@
 
 # 2️⃣ 프로젝트 개요
 ## ⭐프로젝트명
-> (가제) 리그 오브 레전드 유저들의 이탈률 예측
+- 리그 오브 레전드 유저들의 이탈률 예측
 
 <br/>
 
@@ -102,14 +102,14 @@
 <br/>
 
 ## ✅ 프로젝트 필요성
-- 
+- 유저가 이탈하는 이유를 파악한다면 
 - 
 <br/><br/>
 
 ## 🤖 프로젝트 목표
 - 유저의 상세 데이터를 활용하여 이탈 유저의 특성을 파악
 - 이탈 가능성이 있는 유저를 사전에 식별하여 게임의 지속적인 활성화와 유저 만족도 극대화
-- 
+
 <br/><br/>
 
 ## 👓 예상한 유저의 이탈 이유
@@ -121,6 +121,40 @@
 <br/><br/>
 
 # 3️⃣ WBS
+<table>
+  <thead>
+    <td>내용</td>
+    <td>기간</td>
+    <td>담당</td>
+  </thead>
+  <tbody>
+    <tr>
+      <td>프로젝트 주제 확립</td>
+      <td>25.03.21 - 25.03.24</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>데이터 수집</td>
+      <td>25.03.25 - 25.03.30</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>데이터 EDA 및 전처리</td>
+      <td>25.03.29 - 25.03.30</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>시연 Prototype 개발</td>
+      <td>25.03.30 - 25.04.01</td>
+      <td>안종현, 김한솔, 정현욱</td>
+    </tr>
+    <tr>
+      <td>모델 학습 및 평가</td>
+      <td>25.03.31 - 25.04.01</td>
+      <td>ALL</td>
+    </tr>
+  </tbody>
+</table>
 
 <br/><br/>
 
@@ -135,7 +169,10 @@
   <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black">
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
 </p>
-<p>추가하기</p>
+<p>
+  <img src='https://img.shields.io/badge/streamlit%20-%23FF0000.svg?style=for-the-badge&logo=streamlit&logoColor=white'>
+</p>
+
 <br/><br/>
 
 # 5️⃣ RIOT API 데이터 수집
@@ -146,168 +183,385 @@
 
 <br/>
 
+## 📅 데이터 수집 기간
+- **User의 상세 데이터**: 25.03.26 (수) - 25.03.28 (토)
+- **User가 가장 많이 사용하는 상위 3개의 champion 데이터**: 25.03.27 (금) - 25.03.30 (일)
+
+<br/>
+
+## 🌍 총 데이터 수
+- **User 데이터 수**: 2,319,285명
+  - User 데이터에서 랜덤으로 10%만 추출해 사용
+  - 실제 사용한 User 데이터 수: 231,930명
+- **Champion 데이터 수**: 695,703개
+
+<br/>
+
+## 💻 사용한 API
+
 ### 1) LEAGUE-EXP-V4
 - `/lol/league-exp/v4/entries/{queue}/{tier}/{division}?page={page}&api_key={api_key}`
+- User의 상세 데이터 수집
 
+#### 💿LeagueEntryDTO
 <p align="center">
-  <table>
-    <thead>
-      <tr>
-        <th><code>tier</code></th>
-        <th><code>rank</code></th>
-        <th><code>wins</code></th>
-        <th><code>losses</code></th>
-        <th><code>hotStreak</code></th>
-        <th><code>veteran</code></th>
-        <th><code>freshBlood</code></th>
-        <th><code>inactive</code></th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>player의 티어</td>
-      <td>티어 내의 세부 구분(I,II,III,IV) </td>
-      <td>승리한 판의 수</td>
-      <td>패배한 판의 수 </td>
-      <td>연승 여부</td>
-      <td>티어가 꾸준하게 변동되지 않고, 2회 이상 같은 랭크에 있는지 여부</td>
-      <td>랭크의 신규 입문자</td>
-      <td>장기간 게임을 하지 않은 유저</td>
-    </tbody>
-    <tr>
-      <td>object</td>
-      <td>object</td>
-      <td>int64</td>
-      <td>int64</td>
-      <td>Bool</td>
-      <td>Bool</td>
-      <td>Bool</td>
-      <td>Bool</td>
-    </tr>
-  </table>
+  <img src="https://github.com/user-attachments/assets/1e68b0e3-af24-43df-8465-53bdefc2f067" width=600>
 </p>
 
 <br/>
 
 ### 2) SUMMONER-V4
 - `/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}`
+- User의 상세 데이터 수집
 
+#### 💿SummonerDTO 
 <p align="center">
-  <table>
-    <thead>
-      <tr>
-        <th><code>revisionDate</code></th>
-        <th><code>summonerLevel</code></th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>player가 마지막 접속한 날짜 (utc 기준 millisecond)</td>
-      <td>player의 레벨</td>
-    </tbody>
-    <tr>
-      <td>float64</td>
-      <td>float64</td>
-    </tr>
-  </table>
+  <img src="https://github.com/user-attachments/assets/2c121a95-61be-4bd6-8d9d-d95d4b755876" width=600>
 </p>
 
 <br/>
 
 ### 3) CHAMPION-MASTERY-V4
 - `/lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/top`
+- User가 가장 많이 사용하는 상위 3개의 champion 데이터 수집
 
-ChampionMasteryDto
-
-
+#### 💿ChampionMasteryDto
 <p align="center">
-  <table>
-    <thead>
-      <tr>
-        <th><code>championId</code></th>
-        <th><code>championLevel</code></th>
-        <th><code>championPoints</code></th>
-        <th><code>lastPlayTime</code></th>
-        <th><code>championSeasonMilestone</code></th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>champion의 id</td>
-      <td>player가 가진 champion의 레벨</td>
-      <td>player가 가진 champion의 숙련도</td>
-      <td>player가 해당 champion으로 활동한 마지막 시간</td>
-      <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
-    </tbody>
-    <tr>
-      <td>int64</td>
-      <td>int64</td>
-      <td>object</td>
-      <td>int64</td>
-      <td>object</td>
-    </tr>
-  </table>
+  <img src="https://github.com/user-attachments/assets/f6a68dea-e7ef-42da-80bb-9c74f83e6916" width=600>
+</p>
+
+#### 💿NextSeasonMilestonesDto 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/198fec4a-891a-4993-9aed-9bb5076bd1a3" width=600>
+</p>
+
+#### 💿RewardConfigDto
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/41e0f5e8-4998-409c-87fa-616df2cb6c4f" width=600>
 </p>
 
 <br/><br/>
 
 # 6️⃣ 데이터 전처리 결과서 (EDA)
 ## 👉🏻 데이터 확인하기
+### 1) Tier별 유저 분포 확인
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43' width=600>
+</p>
+<p align="center"><b>🔺원본 데이터 시각화</b></p>
+<br/>
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a' width=600>
+</p>
+<p align="center"><b>🔺원본 데이터에서 10% 추출한 데이터 시각화</b></p>
+<br/>
+
+### 2) 결측값 확인
+> 방법: isna() 사용
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/9098b8c0-fcce-45a7-8260-bd3b644be0a1'>
+</p>
+<br/>
+
+### 3) 중복값 제거
+> 방법: drop_duplicates() 사용
+<p align="center">
+  <table border="0">
+    <tr>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/766fabe1-aa69-4407-93e4-c1e7ce7d195b' width=500><br>
+        <b>🔺중복값 제거 전</b>
+      </td>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/afa4faa5-8b14-46f2-b4f5-a08176f29239' width=500><br>
+        <b>🔺중복값 제거 후</b>
+      </td>
+    </tr>
+  </table>
+</p>
+<br/>
+
+## 👉🏻 데이터 정제하기
+### 1) column 정제
+#### 필요없는 column 제거
+> 방법: drop() 사용
+<p align="center>
+  <img src='https://github.com/user-attachments/assets/af78fe6c-90bd-41e5-90e6-f9fc97e6889c'>
+</p>
+
+> **💡 해당 컬럼을 제거한 이유** <br/>
+> `중복값 제거`: id, 비슷한 성격을 가진 컬럼 <br/>
+> `관련성 없는 데이터 제거`: 게임 내에서 얻는 아이템 관련 컬럼 <br/>
+> `불균형 데이터 제거`: inactive 컬럼 <br/>
+
+<br/>
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/afd4e906-e21a-4ea8-b26f-a51c95aca821'>
+</p>
+<p align="center"><b>🔺필요없는 column 제거 전</b></p>
+<br/>
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/dd94aeb3-637f-46b5-81bc-f6cb04c8d2ad'>
+</p>
+<p align="center"><b>🔺필요없는 column 제거 후</b></p>
+
 
 <br/>
 
-### Tier별 유저 분포 확인
-![image](https://github.com/user-attachments/assets/504116ae-5750-48f0-a12d-cd1a5b02ec8a)
-![image](https://github.com/user-attachments/assets/d19b87c5-a8a4-49c6-94f9-6d858abf3a43)
+#### 필요한 column 추가 - churn, winRate 컬럼
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/2c08441a-6a4d-4ec5-8524-e623a182ba23' width=700>
+</p>
+<p align="center"><b>기존에 있던 <code>revisionDate</code> 컬럼을 사용해 마지막 접속일 계산</b></p>
+  <br/>
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/764dd191-dd60-479e-9a79-af4bb39a79f2' width=700>
+</p>
+<p align="center"><b>기존에 있던 <code>wins</code>, <code>losses</code> 컬럼을 사용해 승률 계산</b></p>
 
 <br/>
 
-### 필요없는 column 제거
-![image](https://github.com/user-attachments/assets/63ddab6a-0037-4d13-bbfb-b051ac43568c)
-
-![image](https://github.com/user-attachments/assets/882b8339-0764-4955-9ea9-26879354330d)
-
-
-![image](https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8)
-- freshBlood와 churn은 중간 정도의 상관관계를 가짐 신규 유저면 이탈 확률이 절반
-- veteran일수록 이탈 비율이 낮음 -> veteran이 아닐수록 이탈 비율이 큼
-  
-
-## 👉🏻 데이터 전처리
-### revisionDate 컬럼 datetime으로 변경
-![image](https://github.com/user-attachments/assets/cf3e2cdd-f4f3-46ba-846f-7d7eff87efbe)
-
-### churn 컬럼 생성하기
-![image](https://github.com/user-attachments/assets/ddf964f5-ba6a-4325-975e-9a3689115abb)
-
-### Oversampling
-##### Oversampling veteran, freshBlood, hotStreak, churn 
+### 2) Label Encoding
+> `tier`: object 형 -> 0 ~ 10까지 범주형으로 변경 <br/>
+> `rank`: object 형 -> 0 ~ 3까지 범주형으로 변경 <br/>
+> `veteran`: bool 형 -> 0 or 1로 변경 <br/>
+> `freshBlood`: bool 형 -> 0 or 1로 변경 <br/>
+> `hotStreak`: bool 형 -> 0 or 1로 변경<br/>
 <p align="center">
-  <img src='https://github.com/user-attachments/assets/5678bcd4-64f1-47d7-bd9a-8edfa574d842' width=600></img> <br/>
-  과적합
+  <img src='https://github.com/user-attachments/assets/6236867d-f31d-4075-bc35-1af6134a9c67'>
 </p>
 
-##### Oversampling hotStreak, churn 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/60378169-c58d-427a-8356-bf1d0fa844f9" width=600></img> <br/>
-  과적합
-</p>
 
-##### Oversampling hotStreak
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/c416d868-4b4d-498d-8c72-74b26141144c" width=600></img> <br/>
-</p>
+### 3) 전체 데이터 구조
+<table>
+  <thead>
+    <tr>
+      <th>컬럼명</th>
+      <th>설명</th>
+      <th>데이터 타입</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>tier</code></td>
+      <td>player의 티어</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>rank</code></td>
+      <td>티어 내의 세부 구분(I,II,III,IV)</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>winRate</code></td>
+      <td>승률</td>
+      <td>float</td>
+    </tr>
+    <tr>
+      <td><code>veteran</code></td>
+      <td>티어가 꾸준하게 변동되지 않고, 2회 이상 같은 랭크에 있는지 여부</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>freshBlood</code></td>
+      <td>랭크의 신규 입문자</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>hotStreak</code></td>
+      <td>연승 여부</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>revisionDate</code></td>
+      <td>player가 마지막 접속한 날짜 (UTC 기준 millisecond)</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>summonerLevel</code></td>
+      <td>player의 레벨</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>championId</code></td>
+      <td>champion의 id</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>championLevel</code></td>
+      <td>player가 가진 champion의 레벨</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>championPoints</code></td>
+      <td>player가 가진 champion의 숙련도</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>lastPlayTime</code></td>
+      <td>player가 해당 champion으로 활동한 마지막 시간</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>championSeasonMilestone</code></td>
+      <td>champion이 시즌 내에서 마일스톤을 얼마나 달성했는지</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td><code>churn</code></td>
+      <td>이탈 여부</td>
+      <td>integer</td>
+    </tr>
+  </tbody>
+</table>
 
+<br/>
+
+### ✅ Heatmap 확인하기
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8'>
+</p>
+<br/><br/>
+
+## 👉🏻 데이터 불균형 해소
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/10a50502-ce47-4b18-bd23-527af7b650cf'>
+  <b>🔺데이터 불균형 컬럼 시각화</b>
+</p>
+<br/>
+
+### 1) Over Sampling
+> churn 컬럼 기준 `SMOTE 기법`으로 over sampling하기
+<p align="center">
+  <table border="0">
+    <tr>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/271f7d7b-c417-4143-88c6-12962c220862' width=500><br>
+        <b>🔺over sampling 전</b>
+      </td>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/c514ccf8-bb2f-4afd-8f47-644afffc3df3' width=500><br>
+        <b>🔺over sampling 후</b>
+      </td>
+    </tr>
+  </table>
+</p>
+<br/>
+
+### 2) Under Sampling
+> churn 컬럼 기준 `NearMiss 기법`으로 under sampling하기 - 거리 기반
+<p align="center">
+  <table border="0">
+    <tr>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/29ff299b-2d0b-4b24-8e20-ebede6f39cc2' width=500><br>
+        <b>🔺under sampling - NearMiss 전</b>
+      </td>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/b9dd0947-990b-40ef-8d33-a220cc8ab913' width=500><br>
+        <b>🔺over sampling - NearMiss 후</b>
+      </td>
+    </tr>
+  </table>
+</p>
+<br/>
+
+> churn 컬럼 기준 `TomekLinks 기법`으로 under sampling하기 - 유사도 기반
+<p align="center">
+  <table border="0">
+    <tr>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/29ff299b-2d0b-4b24-8e20-ebede6f39cc2' width=500><br>
+        <b>🔺under sampling - TomekLinks 전</b>
+      </td>
+      <td align="center" style="border:none;">
+        <img src='https://github.com/user-attachments/assets/500e6ee1-6265-4a28-b830-848f251d411d' width=500><br>
+        <b>🔺over sampling - TomekLinks 후</b>
+      </td>
+    </tr>
+  </table>
+</p>
+<br/>
+
+> churn, freshBlood, hotStreak 컬럼 기준 `RandomUnderSampler 기법`으로 under sampling하기
+<p align="center">
+  <table border="0">
+    <tbody>
+      <tr>  
+        <td align="center" style="border:none;">
+          <img src='https://github.com/user-attachments/assets/19fa089a-dfbc-4140-a34e-d56a56b531ab' width=500>/
+        </td>
+        <td align="center" style="border:none;">
+          <img src='https://github.com/user-attachments/assets/bbb4f820-df81-44a4-aea5-60f1c133e901' width=500>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>🔺under sampling - RandomUnderSampler 전</b>
+        </td>
+        <td>
+          <b>🔺under sampling - RandomUnderSampler 후</b>
+        </td>
+      </tr>
+    </tbody>
+    <tr>
+  </table>
+</p>
 
 
 <br/><br/>
 
 # 7️⃣ 인공지능 학습 과정
-- random forest (현욱)
-- logistic regression (종현)
-- knn (근)
-- svm (유경)
-- 앙상블 (종현)
-- deep learning (근)
-- hyper parameter는 하면서 고치기
-- 
+- KNN & Logistic Regression
+> 사용 이유: 선형 분류 모델의 성능 파악을 위함
+
+<table>
+  <thead>
+    <td>
+      <img src='https://github.com/user-attachments/assets/7c2eb7fb-0a2e-4aa2-ad4e-b5afce20cf05'>
+    </td>
+    <td>
+      <img src='https://github.com/user-attachments/assets/865fa7ee-b039-4dff-a3e1-654d986b2b89'>
+    </td>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <img src='https://github.com/user-attachments/assets/31adaa5f-8c0e-45a5-9f2f-986cbd48bfa3'>
+      </td>
+      <td>
+        <img src='https://github.com/user-attachments/assets/49353253-cae5-473e-8d10-502117b68b0e'>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src='https://github.com/user-attachments/assets/5dea3bf8-86b9-4628-aa72-58ef5e792f97'>
+      </td>
+      <td>
+        <img src='https://github.com/user-attachments/assets/b0895b78-a9bf-41a6-8cac-d1dbdac8c9b3'>
+      </td>
+    </tr>
+  </tbody>
+
+</table><br/>
+
+- SVM
+> 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함
+  - PCA를 통한 차원 축소(2차원, 3차원)
+![image](https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec)
+![image](https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6)
+  - 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
+    ![image](https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8)
+
+<br/>
+
+- Random Forest
+  - 차원 축소하지 않은 데이터의 정확도
+    ![image](https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4)
+
+- Ensemble
+
+- Deep Learning
 
 <br/><br/>
 
