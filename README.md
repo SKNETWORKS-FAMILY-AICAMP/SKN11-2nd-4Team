@@ -26,7 +26,7 @@
       <a href='https://github.com/kim-hansol314'>김한솔</a><br />
     </td>
     <td align="center">
-      <img src="" width="200" alt="jonghyun"/><br />
+      <img src="https://github.com/user-attachments/assets/92d8d4e4-6b97-42d8-9b87-a0e540344a97" width="200" alt="jonghyun"/><br />
       <a href='https://github.com/'>안종현</a><br />
     </td>
   </thead>
