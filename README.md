@@ -412,7 +412,7 @@
 ### ✅ Heatmap 확인하기
 <p align="center">
   <img src='https://github.com/user-attachments/assets/b61f2d8d-9c28-414e-a96f-d40655e371d8'>
-  <b>🔺데이터 샘플링 한 후 Heatmap</b>
+  <b>🔺데이터 샘플링 전 Heatmap</b>
 </p>
 <br/><br/>
 
@@ -505,7 +505,7 @@
 ### ✅ Heatmap 확인하기
 <p align="center">
   <img src='https://github.com/user-attachments/assets/e2417f71-492b-4951-a8d7-54577adc78fb'>
-  <b>🔺데이터 샘플링 한 후 Heatmap</b>
+  <b>🔺데이터 샘플링 후 Heatmap</b>
 </p>
 <br/><br/>
 
@@ -547,29 +547,42 @@
 
 - SVM
 > 사용 이유: 비선형 분류 모델의 효율적인 학습 여부 파악을 위함
-  - PCA를 통한 차원 축소(2차원, 3차원)
-![image](https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec)
-![image](https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6)
-  - 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
-    - 30%만 샘플링한 이유: 시간 복잡도 증가
-    ![image](https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8)
-
+  A. PCA를 통한 차원 축소(2차원, 3차원)
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/6d4662c7-a133-46d3-93fe-14ebc28215ec'>
+  <img src='https://github.com/user-attachments/assets/6acbc6e6-4f05-4adb-80e1-90e327955ab6'>
+</p>
+  B. 차원 축소하지 않고, 30%의 데이터만 샘플링했을 경우 정확도
+     -> 30%만 샘플링한 이유: 시간 복잡도 증가
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/deae7a77-2d08-42ee-9321-7f806130b1d8'>
+</p>
 <br/>
 
 - Random Forest
-  - 차원 축소하지 않은 데이터의 정확도
-    ![image](https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4)
-  - max_depth=4
-![KakaoTalk_20250401_112744774_05](https://github.com/user-attachments/assets/c3148a31-0513-49f8-9c4d-336dfc4bcb74)
-  - 특성 중요도
-![image](https://github.com/user-attachments/assets/bf6605a1-0d60-4420-ad22-b46cf2bcdb0a)
-
-  - best hyperparams
-![image](https://github.com/user-attachments/assets/ea200da9-40c9-4d28-aa44-420d0a8c8804)
+> 사용 이유: 비선형 분류에 강한 앙상블 모델로 churn 컬럼 이외의 컬럼들의 관계성을 학습하기 위함
+  A. 차원 축소하지 않은 데이터의 정확도
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/365c4bf9-fb50-49c7-b0db-fc4dd6b139a4'>
+</p><br/>
+  B. max_depth=4
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/c3148a31-0513-49f8-9c4d-336dfc4bcb74'>
+</p><br/>
+  C. 특성 중요도
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/bf6605a1-0d60-4420-ad22-b46cf2bcdb0a'>
+</p><br/>
+  D. Best Hyper Parameters
+<p align="center">
+  <img src='https://github.com/user-attachments/assets/ea200da9-40c9-4d28-aa44-420d0a8c8804'>
+</p><br/>
 
 - Ensemble
+> 사용 이유:
 
 - Deep Learning
+> 사용 이유: 
 
 <br/><br/>
 
